@@ -138,14 +138,14 @@ Hgn_DefenseFieldFrigate = {
 }
 Hgn_Destroyer = {
   LargeIcon = {
-    texture = "DATA:\\Ship\\Icons\\default\\ships.mres",
+    texture = "DATA:\\Ship\\Icons\\hiigaran\\hgn_destroyer.tga",
     textureUV_TL = {
       0,
-      192,
+      0,
     },
     textureUV_WH = {
-      177,
-      64,
+      512,
+      128,
     },
     stretchOnDraw = 1,
   },
@@ -366,14 +366,14 @@ Hgn_Scout = {
 }
 Hgn_Shipyard = {
   LargeIcon = {
-    texture = "DATA:\\Ship\\Icons\\default\\ships.mres",
+    texture = "DATA:\\Ship\\Icons\\hiigaran\\hgn_shipyard.tga",
     textureUV_TL = {
       0,
-      896,
+      0,
     },
     textureUV_WH = {
-      159,
-      64,
+      512,
+      256,
     },
     stretchOnDraw = 1,
   },
