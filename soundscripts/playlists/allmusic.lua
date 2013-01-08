@@ -25,8 +25,5 @@ PlayList =
 	{"staging\\staging_05", "Staging, No.3", 139,},	-- 155
 	{"staging\\staging_08", "Staging, No.4", 144,},	-- 110
 	{"staging\\staging_11", "Staging, No.5", 139,},	-- 129
-	{"staging\\Suite", "Slipstream Suite - SRI-Emperor", 123,},
-	{"staging\\Freedom", "The Price of Freedom - DJZ4K", 175,},	-- 64
-	{"staging\\Ambient", "Slipstream Ambient - DJZ4K", 950,},	-- 64
 
 }

@@ -1,5 +1,3 @@
-dofilepath("data:config/ui-strings.lua")
-
 NewMainMenu = 
 { 
     size = 
@@ -35,7 +33,7 @@ NewMainMenu =
     Text = 
     { 
         textStyle = "FEHeading3", 
-        text = MOD_NAME, 
+        text = "FRAMEWORK", 
         offset = 
             { 8, 0, }, }, 
 }, 
@@ -52,7 +50,7 @@ NewMainMenu =
     Text = 
     { 
         textStyle = "FEHeading4", 
-        text = "v".. MOD_VERSION, 
+        text = "v0.1", 
         offset = 
             { 8, 0, }, }, 
 }, 

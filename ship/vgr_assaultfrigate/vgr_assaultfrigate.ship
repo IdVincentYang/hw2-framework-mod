@@ -4,8 +4,8 @@
 -- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
 --
 NewShipType = StartShipConfig()
-NewShipType.displayedName = "Taiga"
-NewShipType.sobDescription = "DSCG Assualt Frigate"
+NewShipType.displayedName = "$1618"
+NewShipType.sobDescription = "$1619"
 NewShipType.maxhealth = 75000
 NewShipType.regentime = 1200
 NewShipType.minRegenTime = 450
@@ -156,16 +156,13 @@ addAbility(NewShipType, "RetireAbility", 1, 1)
 LoadModel(NewShipType, 1)
 
 StartShipWeaponConfig(NewShipType, "vgr_heavyfusionmissilelauncherbc", "Weapon_Missile", "Fire_Missile")
+StartShipWeaponConfig(NewShipType, "Vgr_FlechetteCannonAssaultFrigateBottom", "Weapon_Bottom", "Weapon_Bottom")
+StartShipWeaponConfig(NewShipType, "Vgr_FlechetteCannonAssaultFrigateLeft", "Weapon_Left", "Weapon_Left")
+StartShipWeaponConfig(NewShipType, "Vgr_FlechetteCannonAssaultFrigateRight", "Weapon_Right", "Weapon_Right")
 
 addShield(NewShipType, "EMP", 310, 20)
 
-StartShipHardPointConfig(NewShipType, "Turret_Front", "Weapon_Bottom", "System", "Innate", "Damageable", "vgr_pmortarfrigatebottom", "", "", "", "", "", "", "", "")
 
-StartShipHardPointConfig(NewShipType, "Turret_Left", "Weapon_Left", "System", "Innate", "Damageable", "vgr_pmortarfrigateleft", "", "", "", "", "", "", "", "")
-
-StartShipHardPointConfig(NewShipType, "Turret_Right", "Weapon_Right", "System", "Innate", "Damageable", "vgr_pmortarfrigateright", "", "", "", "", "", "", "", "")
-
-StartShipHardPointConfig(NewShipType, "Weapon_Module", "Hardpoint_mount", "System", "Innate", "Damageable", "vgr_gunmount", "", "", "", "", "", "", "", "")
 
 NewShipType.battleScarMaxTriBase = 75
 NewShipType.battleScarMaxTriInc = 100

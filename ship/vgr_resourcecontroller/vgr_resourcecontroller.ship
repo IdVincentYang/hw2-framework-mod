@@ -125,8 +125,6 @@ NewShipType.selectionLimit = 150000
 NewShipType.preciseATILimit = 0
 NewShipType.selectionPriority = 75
 NewShipType.militaryUnit = 0
-addAbility(NewShipType, "MoveCommand", 1, 0)
-addAbility(NewShipType, "CanDock", 1, 1)
 NewShipType.dockTimeBetweenTwoFormations = 1
 NewShipType.dockTimeBeforeStart = 2
 NewShipType.dockNrOfShipsInDockFormation = 1
@@ -134,33 +132,37 @@ NewShipType.dockFormation = "delta"
 NewShipType.queueFormation = "dockline"
 NewShipType.dontDockWithOtherRaceShips = 1
 NewShipType.ignoreRaceWhenDocking = 0
-addAbility(NewShipType, "CanLaunch")
 NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "delta"
+addAbility(NewShipType, "CanLaunch")
+addAbility(NewShipType, "MoveCommand", 1, 0)
+addAbility(NewShipType, "CanDock", 1, 1)
 addAbility(NewShipType, "ShipHold", 1, 160, 0, "rallypoint", "", 35)
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType,"MinelayerAbility",1,3.5)
-addAbility(NewShipType,"HyperSpaceCommand",0,0,250,250,0,3.141592653);
+addAbility(NewShipType, "MinelayerAbility",1,3.5)
+addAbility(NewShipType, "HyperSpaceCommand", 0, 0, 250, 250, 0, 3)
+addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1, "Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip", "JustShoot")
 addAbility(NewShipType, "GuardCommand", 1, 3000, 800)
-addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "CanBeRepaired")
 addAbility(NewShipType, "RetireAbility", 1, 1)
+
 LoadModel(NewShipType, 1)
---StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense1", "")
---StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense3", "")
---StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense5", "")
---StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense7", "")
+
+StartShipWeaponConfig(NewShipType, "Vgr_Laser", "Weapon_HullDefense1", "")
+StartShipWeaponConfig(NewShipType, "Vgr_Laser", "Weapon_HullDefense2", "")
+StartShipWeaponConfig(NewShipType, "Vgr_hulldefensegun", "Weapon_HullDefense7", "")
+StartShipWeaponConfig(NewShipType, "Vgr_hulldefensegun", "Weapon_HullDefense8", "")
+
+StartShipWeaponConfig(NewShipType, "Vgr_Laser", "Weapon_HullDefense3", "")
+StartShipWeaponConfig(NewShipType, "Vgr_Laser", "Weapon_HullDefense4", "")
+StartShipWeaponConfig(NewShipType, "Vgr_hulldefensegun", "Weapon_HullDefense5", "")
+StartShipWeaponConfig(NewShipType, "Vgr_hulldefensegun", "Weapon_HullDefense6", "")
+
 addShield(NewShipType, "EMP", 220, 20)
-
-StartShipHardPointConfig(NewShipType, "Turret_Front", "Weapon_Turret_Bottom", "System", "Innate", "Damageable", "vgr_pmortarfrigatebottom", "", "", "", "", "", "", "", "")
-
-StartShipHardPointConfig(NewShipType, "Turret_Left", "Weapon_Turret_Left", "System", "Innate", "Damageable", "vgr_pmortarfrigateleft", "", "", "", "", "", "", "", "")
-
-StartShipHardPointConfig(NewShipType, "Turret_Right", "Weapon_Turret_Right", "System", "Innate", "Damageable", "vgr_pmortarfrigateright", "", "", "", "", "", "", "", "")
 
 NewShipType.battleScarMaxTriBase = 75
 NewShipType.battleScarMaxTriInc = 100

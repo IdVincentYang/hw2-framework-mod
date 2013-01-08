@@ -16,8 +16,8 @@ NewShipType.bottomArmourDamage = 0.85
 NewShipType.frontArmourDamage = 0.75
 NewShipType.isTransferable = 1
 NewShipType.useEngagementRanges = 0
-NewShipType.unitCapsNumber = 2
-NewShipType.SquadronSize = 3
+NewShipType.unitCapsNumber = 1
+NewShipType.SquadronSize = 1
 NewShipType.formationSpacing = 50
 NewShipType.passiveFormation = "Broad"
 NewShipType.defensiveFormation = "Delta"
@@ -79,9 +79,9 @@ NewShipType.neutralValue = 0
 NewShipType.antiFighterValue = 0
 NewShipType.antiCorvetteValue = 10
 NewShipType.antiFrigateValue = 0
-NewShipType.totalValue = 10
-NewShipType.buildCost = 425
-NewShipType.buildTime = 45
+NewShipType.totalValue = 1
+NewShipType.buildCost = 200
+NewShipType.buildTime = 25
 NewShipType.buildPriorityOrder = 10
 NewShipType.retaliationRange = 5500
 NewShipType.retaliationDistanceFromGoal = 160
@@ -158,6 +158,7 @@ addAbility(NewShipType, "CanAttack", 1, 1, 1, 0, 0.35, 1, "munition, Corvette, F
 {
     Corvette = "FlyBy_Corvette_vs_Corvette", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
+addAbility(NewShipType, "HyperSpaceCommand", 0, 2, 500, 500, 0, 3)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "RetireAbility", 1, 0)
 LoadModel(NewShipType, 1)

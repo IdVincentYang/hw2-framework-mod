@@ -1,162 +1,266 @@
 PersistantData = {
-   StrikeGroups = {
-   },
-   Squadrons = {
-
-      {
-         type = "Vgr_ResourceCollector",
-         subsystems = {
-         },
-         shiphold = {
-         },
-         name = "",
-         size = 1,
-         number = 6,
-      },
-
-      {
-         type = "Vgr_shipyard",
-         subsystems = {
-         },
-         shiphold = {
-         },
-         name = "",
-         size = 1,
-         number = 1,
-      },
-
-      {
-         type = "vgr_resourcecontroller",
-         subsystems = {
-         },
-         shiphold = {
-         },
-         name = "",
-         size = 1,
-         number = 1,
-
-      },
-	  {
-         type = "vgr_battlecruiser",
-         subsystems = {
-         },
-         shiphold = {
-         },
-         name = "",
-         size = 1,
-         number = 2,
-	  },
-	  {
-         type = "vgr_assaultfrigate",
-         subsystems = {
-         },
-         shiphold = {
-         },
-         name = "",
-         size = 1,
-         number = 5,
-	   },
-	  {
-         type = "vgr_destroyer",
-         subsystems = {
-         },
-         shiphold = {
-         },
-         name = "",
-         size = 1,
-         number = 2,
-
-	  },
+	StrikeGroups = {},
+   	Squadrons = {
+  		{
+			type = "Vgr_ResourceCollector",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 6,
+		},
+		{
+			type = "Vgr_ResourceController",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 1,
+		},
+		{
+			type = "Vgr_shipyard",
+			subsystems = {
+			
+				{
+					index = 0, --Fighter Production
+					name = "Vgr_MS_Production_Fighter",		
+				},
+				{
+					index = 0, --Corvette Production
+					name = "Vgr_MS_Production_Corvette",		
+				},
+				{
+					index = 0, --Frigate Production
+					name = "Vgr_MS_Production_Frigate",		
+				},
+				{
+					index = 0, --Capship Production
+					name = "Vgr_SY_Production_CapShip",		
+				},
+				{
+					index = 0, -- Sensors Array
+					name = "Vgr_MS_Sensors_AdvancedArray",		
+				},
+				{
+					index = 0, -- Generic 1
+					name = "Vgr_MS_Module_Research",		
+				},
+				{
+					index = 0, -- Generic 2
+					name = "Vgr_MS_Module_ResearchAdvanced",		
+				},
+				{
+					index = 0, -- Generic 3
+					name = "Vgr_MS_Module_Hyperspace",		
+				},
+				{
+					index = 0, -- Generic 4
+					name = "Vgr_MS_Module_PlatformControl",		
+				},
+				{
+					index = 0, -- Generic 5
+					name = "Vgr_MS_Module_FireControl",		
+				},
+				{
+					index = 0, -- Generic 6
+					name = "Vgr_MS_Module_HyperspaceInhibitor",		
+				},
+			
+			},
+			shiphold = {},
+			name = "",
+			size = 1,
+			number = 1,
+		},
+		{
+			type = "Vgr_battlecruiser",
+			subsystems = { 
+			
+				{
+					index = 0, --Generic 1
+					name = "Vgr_c_module_firecontrol",		
+				},
+				{
+					index = 0, --Generic 2
+					name = "Vgr_c_module_cloakgenerator",		
+				},
+			
+			},
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 1,
+		},
+		{
+			type = "Vgr_battlecruiser",
+			subsystems = { 
+			
+				{
+					index = 0, --Generic 1
+					name = "Vgr_c_module_hyperspace",		
+				},
+				{
+					index = 0, --Generic 2
+					name = "Vgr_c_module_hyperspaceinhibitor",		
+				},
+			
+			},
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 1,
+		},
+		{
+			type = "Vgr_carrier",
+			subsystems = { 
+			
+				{
+					index = 0,
+					name = "Vgr_C_Production_Fighter",
+				},
+				{
+					index = 0,
+					name = "Vgr_C_Sensors_DetectCloaked",
+				},
+				{
+					index = 0,
+					name = "Vgr_C_Module_FireControl",
+				},
+				{
+					index = 0,
+					name = "Vgr_C_Module_CloakGenerator",
+				},
+			
+			},
+			shiphold = {},
+			name = "",
+			size = 1,
+			number = 1,
+		},
+		{
+			type = "Vgr_carrier",
+			subsystems = { 
+			
+				{
+					index = 0,
+					name = "Vgr_C_Production_Frigate",
+				},
+				{
+					index = 0,
+					name = "Vgr_c_sensors_detecthyperspace",
+				},
+				{
+					index = 0,
+					name = "Vgr_c_module_hyperspace",
+				},
+				{
+					index = 0,
+					name = "Vgr_c_module_platformcontrol",
+				},
+			
+			},
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 1,
+		},
+		{
+			type = "Vgr_Destroyer",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 2,
+		},
+		{
+			type = "vgr_heavymissilefrigate",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 2,
+		},
+		{
+			type = "Vgr_assaultfrigate",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 2,
+		},
+		{
+			type = "vgr_infiltratorfrigate",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 2,
+		},
+		{
+			type = "Vgr_interceptor",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 10,
+		},
+		{
+			type = "Vgr_bomber",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 10,
+		},
+		{
+			type = "vgr_lancefighter",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 10,
+		},
+		{
+			type = "vgr_missilecorvette",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 5,
+		},
+		{
+			type = "vgr_lasercorvette",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 5,
+		},
+		{
+			type = "vgr_weaponplatform_gun",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 5,
+		},
+		{
+			type = "vgr_weaponplatform_missile",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 5,
+		},
+		{
+			type = "vgr_hyperspace_platform",
+			subsystems = { },
+			shiphold = { },
+			name = "",
+			size = 1,
+			number = 2,
+		},
 	},
-   Research = {
-   [1] = {
-      name = "CorvetteTech",
-      progress = 1,
-    },
-	[2] = {
-      name = "FrigateTech",
-      progress = 1,
-    },
-	[3] = {
-      name = "ProbeSensorDisruption",
-      progress = 1,
-	},
-	[4] = {
-      name = "ProbeProxSensor",
-      progress = 1,
-    },
-	[5] = {
-      name = "LanceBeams",
-      progress = 1,
-    },
-	[6] = {
-      name = "PlasmaBombs",
-      progress = 1,
-    },
-	[7] = {
-      name = "CorvetteLaser",
-      progress = 1,
-	},
-	[8] = {
-      name = "CorvetteCommand",
-      progress = 1,
-    },
-	[9] = {
-      name = "PlatformHeavyMissiles",
-      progress = 1,
-    },
-	[10] = {
-      name = "FrigateAssault",
-      progress = 1,
-    },
-	[11] = {
-      name = "FrigateInfiltrationTech",
-      progress = 1,
-    },
-	[12] = {
-      name = "FrigateGravity",
-      progress = 1,
-    },
-	[13] = {
-      name = "FrigateCloak",
-      progress = 1,
-	},
-	[14] = {
-      name = "BattlecruiserIonWeapons",
-      progress = 1,
-    },
-	[15] = {
-      name = "DestroyerGuns",
-      progress = 1,
-    },
-	[16] = {
-      name = "AdvDestroyer",
-      progress = 1,
-    },
-	[17] = {
-      name = "AncientHullEngineering",
-      progress = 1,
-	},
-	[18] = {
-      name = "HyperspaceGateTech",
-      progress = 1,
-    },
-	[19] = {
-      name = "RepairAbility",
-      progress = 1,
-    },
-	[20] = {
-      name = "ScoutEMPAbility",
-      progress = 1,
-    },
-	[21] = {
-      name = "BattleshipHullEngineering",
-      progress = 1,
-    },
-	[22] = {
-      name = "SYENABLED",
-      progress = 1,
-    },
-   },
+   
+   Research = {},
 }
-
