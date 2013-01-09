@@ -12,6 +12,7 @@ Animatics/**/*
 ##################
 *.backup
 *.old
+*~
 
 # Launch Files
 #################
