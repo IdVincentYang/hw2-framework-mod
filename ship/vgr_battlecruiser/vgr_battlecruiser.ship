@@ -155,9 +155,21 @@ addAbility(NewShipType, "ShipHold", 1, 0, 5, "rallypoint", "Fighter, Corvette", 
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
 addAbility(NewShipType, "HyperSpaceCommand", 0, 0, 250, 250, 0, 3);
-addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.2, "munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter", "dread_strafe",
-{
-    Mothership = "Flyround_destroyer",})
+addAbility(NewShipType, "CanAttack", 1, 1, 0, 0, 0.35, 1.2, "Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter", "Frontal", 
+{ 
+    Fighter = "MoveToTargetAndShoot", 
+}, 
+{ 
+    Corvette = "MoveToTargetAndShoot", 
+}, 
+{ 
+    Frigate = "MoveToTargetAndShoot", 
+},
+{ 
+    Munition = "JustShoot", 
+}, 
+{ 
+    SubSystem = "FrontalVsSubSystem", })
 addAbility(NewShipType, "GuardCommand", 1, 3000, 1000)
 addAbility(NewShipType, "CanBuildShips", 1,"SubSystem_Vgr","SubSystemModule")
 addAbility(NewShipType, "CanBeCaptured", 160, 0.1)
@@ -183,7 +195,7 @@ StartShipWeaponConfig(NewShipType, "vgr_smallmissile", "Weapon_BCHeavyLaser1", "
 StartShipWeaponConfig(NewShipType, "vgr_smallmissile", "Weapon_BCHeavyLaser2", "")
 StartShipWeaponConfig(NewShipType, "vgr_smallmissile", "Weapon_BCHeavyLaser3", "")
 StartShipWeaponConfig(NewShipType, "vgr_smallmissile", "Weapon_BCHeavyLaser4", "")
-StartShipWeaponConfig(NewShipType, "Vgr_BCForwardWeapon", "Weapon_BCUberPulse", "Weapon_BCUberPulse")
+StartShipWeaponConfig(NewShipType, "hgn_dreadnaughtioncannon", "Weapon_BCUberPulse", "Weapon_BCUberPulse")
 
 addShield(NewShipType, "EMP", 10000, 20)
 

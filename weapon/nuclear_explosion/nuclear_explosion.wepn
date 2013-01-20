@@ -1,0 +1,7 @@
+StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","nuclear_explosion","Normal",0,0,1000,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0)
+
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100000,100000,"")
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",1000,1000,"")
+AddWeaponResult(NewWeaponType,"Hit","Disable","Target",1000,1000,"")
+
+setPenetration(NewWeaponType, 100, 1)

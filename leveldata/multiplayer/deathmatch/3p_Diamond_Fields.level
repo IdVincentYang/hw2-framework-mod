@@ -717,10 +717,6 @@ function DetermChunk()
 	{ -1044, 1210, 14298, }, 100, -110.404, -31.983, 137.135, 0)
 	addSalvage("Slv_Chunk_Lrg03", 
 	{ -1390, 1175, 14483, }, 100, 55.774, -17.369, -50.259, 0)
-
-	-- Hyperspace Bridge -- 
-
-	addSquadron("HyperspaceBridge", "meg_balcoragate", {100000, 0, 0}, -1, {0,90,0}, 0, 0)
 	
 
 	setWorldBoundsInner({ 0, 0, 0,} , { 35000, 35000, 35000, })
@@ -729,7 +725,15 @@ end
 
 function NonDetermChunk()
 
-	setLevelShadowColour(0, 0, 0, 1)
+	fogSetActive(1)
+	fogSetStart(800)
+	fogSetEnd(20000)
+	fogSetColour(0.351563, 0, 0, 1)
+	fogSetType("linear")
+	fogSetDensity(0.2)
+	setGlareIntensity(0)
+	setDefaultMusic("Data:sound/music/AMBIENT/AMB_05")
+	setLevelShadowColour(0, 0, 0, 0)
 	loadBackground("Diamond_Fields")
 	setSensorsManagerCameraDistances(12000, 40000)
 	

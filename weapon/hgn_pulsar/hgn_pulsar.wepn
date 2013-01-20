@@ -1,10 +1,10 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","Laser","Normal",0,9500,0,0.5,0,0,1,1,1,1.5,0,0,1,1,360,360,0.1,"Normal",1,0,300)
+StartWeaponConfig(NewWeaponType, "Gimble", "InstantHit", "Laser", "Normal", 0, 5000, 0, 0.5, 0, 0, 1, 0, 1, 1.5, 0, 0, 1, 1, 360, 360, 0.1, "Normal", 0, 0, 300)
 
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1000,1000,"")
 
-setAngles(NewWeaponType,0,-180,180,-1,60)
+setAngles(NewWeaponType,60,0,0,0,0)
 
-setMiscValues(NewWeaponType,4,0)
+setMiscValues(NewWeaponType,0,0)
 
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=1,},

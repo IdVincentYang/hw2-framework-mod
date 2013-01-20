@@ -366,8 +366,6 @@ function DetermChunk()
 	addAsteroid("Asteroid_1", {13543, 600, -12945}, 200, 0, 0, 0, 0)
 	addAsteroid("Asteroid_1", {-13542, 600, 12946}, 200, 0, 0, 0, 0)
 	addAsteroid("Asteroid_1", {60765, 600, 109984}, 200, 0, 0, 0, 0)
-
-	addSquadron("HyperspaceBridge", "meg_balcoragate", {36475, 12000, 30699}, -1, {0, 45, 0}, 0, 0)
 	
 	addSquadron("meg_sajhulkturret", "meg_sajhulkturret", {-3972, 1500, 3757}, -1, {68, 38, 70}, 0, 0)
 	addSquadron("meg_foundrydebris_chunk2", "meg_foundrydebris_chunk2", {750, -600, 5613}, -1, {56, -45, 0}, 0, 0)
@@ -382,6 +380,15 @@ end
 
 function NonDetermChunk()
 
+	fogSetActive(1)
+	fogSetStart(800)
+	fogSetEnd(20000)
+	fogSetColour(0.351563, 0, 0, 1)
+	fogSetType("linear")
+	fogSetDensity(0.2)
+	setGlareIntensity(0)
+	setDefaultMusic("Data:sound/music/AMBIENT/AMB_05")
+	setLevelShadowColour(0, 0, 0, 0)
 	loadBackground("Orions_Bridge")
 	setSensorsManagerCameraDistances(10000, 50000)
 	

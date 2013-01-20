@@ -1,6 +1,6 @@
 NewShipType = StartShipConfig()
-NewShipType.displayedName="Sea Lion"
-NewShipType.sobDescription="UNCG Boarding Frigate"
+NewShipType.displayedName = "$1528"
+NewShipType.sobDescription = "$1529"
 NewShipType.maxhealth=75000
 NewShipType.regentime=1200
 NewShipType.minRegenTime=1200

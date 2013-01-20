@@ -78,8 +78,16 @@ end
 
 function NonDetermChunk()
 
-  setLevelShadowColour(0, 0, 0, 1)
-  loadBackground("Deepspace")
-  setSensorsManagerCameraDistances(12000, 60000)
+	fogSetActive(1)
+	fogSetStart(800)
+	fogSetEnd(20000)
+	fogSetColour(0.351563, 0, 0, 1)
+	fogSetType("linear")
+	fogSetDensity(0.2)
+	setGlareIntensity(0)
+	setLevelShadowColour(0, 0, 0, 1)
+	loadBackground("Deepspace")
+	setSensorsManagerCameraDistances(12000, 60000)
+	setDefaultMusic("Data:sound/music/AMBIENT/AMB_05")
   
 end

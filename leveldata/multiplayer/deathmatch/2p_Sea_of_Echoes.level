@@ -58,9 +58,6 @@ function DetermChunk()
 	addSquadron("Meg_SajHulkPanels5", "Meg_SajHulkPanels", {-3433, 1459, 3050}, -1, {120.108, -38.66, -149.942}, 0, 0)
 	addSquadron("meg_sajhulknose", "meg_sajhulknose", {7000, 10000, -9000}, -1, {-6, -50, 150}, 0, 0)
 	
-	addSquadron("anc_hyperspace_bridge", "meg_balcoragate", {0, 0, -100000}, -1, {0,0,0}, 0, 0)
-	
-	--Boundaries
 
 	setWorldBoundsInner({-4.4, 0, 0}, {42000, 42000, 42000})
 	
@@ -68,7 +65,15 @@ end
 
 function NonDetermChunk()
 
-	setLevelShadowColour(0, 0, 0, 1)
+	fogSetActive(1)
+	fogSetStart(800)
+	fogSetEnd(20000)
+	fogSetColour(0.351563, 0, 0, 1)
+	fogSetType("linear")
+	fogSetDensity(0.2)
+	setGlareIntensity(0)
+	setDefaultMusic("Data:sound/music/AMBIENT/AMB_05")
+	setLevelShadowColour(0, 0, 0, 0)
 	loadBackground("sea_of_echoes")
 	setSensorsManagerCameraDistances(12000, 60000)
 

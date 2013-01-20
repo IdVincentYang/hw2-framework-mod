@@ -1,4 +1,5 @@
-StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "HDefense", "Normal", 4500, 2500, 0, 0, 0, 0, 1, 1, 0, 0.1, 5, 1, 1, 0, 80, 40, 0.1, "Normal", 0, 0, 0)
+--StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "HDefense", "Normal", 4500, 2500, 0, 0, 0, 0, 1, 1, 0, 0.1, 5, 1, 1, 0, 80, 40, 0.1, "Normal", 0, 0, 0)
+StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "HDefense", "Normal", 4500, 2500, 0, 0, 0, 0, 1, 0, 1, 0.1, 5, 1, 1, 1, 80, 40, 0.1, "Normal", 0, 0, 0)
 
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",600,900,"")
 

@@ -1,0 +1,6 @@
+bulletfx = "plasma_explosion_combo"
+nopenetratefx = "nopen_generic"
+deathtype = "plasma_explosion_combo"
+hit_sfx = "Explosion/Large/ETG_Explode_Large_Plasma"
+hit_clamp = 
+    { 1, 1, }

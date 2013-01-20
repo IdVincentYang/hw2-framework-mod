@@ -52,10 +52,7 @@ function Play(Music)
 		ShuffleStaging()
 			
 	elseif Music == "mute" then
-		Sound_MusicPlay("data:sound\\music\\staging\\Mute" )
-		
-	elseif Music == "credits" then
-		Sound_MusicPlay("data:sound\\music\\staging\\Credits" )	
+		Sound_MusicPlay("data:sound\\music\\Mute" )
 		
 	else
 		Sound_MusicPlay("data:sound\\music\\" .. Music)

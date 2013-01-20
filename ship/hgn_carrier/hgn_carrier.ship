@@ -170,6 +170,16 @@ StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense2"
 StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense3", "Weapon_HullDefense3")
 StartShipWeaponConfig(NewShipType, "Hgn_MSHullDefenseGun", "Weapon_HullDefense4", "Weapon_HullDefense4")
 
+StartShipWeaponConfig(NewShipType, "Hgn_Pulsar", "Weapon_HullDefense1", "Weapon_HullDefense1")
+StartShipWeaponConfig(NewShipType, "Hgn_Pulsar", "Weapon_HullDefense2", "Weapon_HullDefense2")
+StartShipWeaponConfig(NewShipType, "Hgn_Pulsar", "Weapon_HullDefense3", "Weapon_HullDefense3")
+StartShipWeaponConfig(NewShipType, "Hgn_Pulsar", "Weapon_HullDefense4", "Weapon_HullDefense4")
+
+StartShipWeaponConfig(NewShipType, "Hgn_Smalltorpedo", "Weapon_HullDefense1", "Weapon_HullDefense1")
+StartShipWeaponConfig(NewShipType, "Hgn_Smalltorpedo", "Weapon_HullDefense2", "Weapon_HullDefense2")
+StartShipWeaponConfig(NewShipType, "Hgn_Smalltorpedo", "Weapon_HullDefense3", "Weapon_HullDefense3")
+StartShipWeaponConfig(NewShipType, "Hgn_Smalltorpedo", "Weapon_HullDefense4", "Weapon_HullDefense4")
+
 addShield(NewShipType, "EMP", 10000, 20)
 
 StartShipHardPointConfig(NewShipType, "Production 1", "HardpointProduction1", "System", "Production", "Destroyable", "", "Hgn_C_Production_Fighter", "hgn_gatlinggun", "", "", "", "", "", "")

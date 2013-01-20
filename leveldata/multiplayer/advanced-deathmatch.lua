@@ -59,7 +59,7 @@ GameSetupOptions = {
 		visible = 1,
 		choices =
 		{
-			"Factory", "1",
+			"Default", "1",
 			"Carrier", "2",
 			"Fleet", "3",
 		},
