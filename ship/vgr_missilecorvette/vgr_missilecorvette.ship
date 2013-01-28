@@ -4,8 +4,8 @@
 -- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
 --
 NewShipType = StartShipConfig()
-NewShipType.displayedName = "$1620"
-NewShipType.sobDescription = "$1621"
+NewShipType.displayedName = "$1612"
+NewShipType.sobDescription = "$1613"
 NewShipType.maxhealth = 7250
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
@@ -13,8 +13,8 @@ NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
 NewShipType.useEngagementRanges = 0
-NewShipType.unitCapsNumber = 2
-NewShipType.SquadronSize = 4
+NewShipType.unitCapsNumber = 1
+NewShipType.SquadronSize = 1
 NewShipType.formationSpacing = 40
 NewShipType.passiveFormation = "ScatterWide"
 NewShipType.defensiveFormation = "ScatterDelta_Long"

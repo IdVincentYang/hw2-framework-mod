@@ -16,11 +16,11 @@ setPenetration(NewWeaponType, 5, 1,
     TurretArmour = 3, })
 setAccuracy(NewWeaponType, 1, 
 { 
-    Fighter = 0.14, 
+    Fighter = 0.5, 
 }, 
 { 
-    Corvette = 0.45, 
+    Corvette = 0.75, 
 }, 
 { 
-    munition = 0.2, })
+    munition = 0.25, })
 setAngles(NewWeaponType, 90, 0, 0, 0, 0)

@@ -5,8 +5,8 @@
 --  Copyright Relic Entertainment, Inc.  All rights reserved.
 --===========================================================================
 NewSubSystemType = StartSubSystemConfig()
-NewSubSystemType.displayedName="Repair Director"
-NewSubSystemType.sobDescription="$2011"
+NewSubSystemType.displayedName="Repair Module"
+NewSubSystemType.sobDescription = "$2013"
 NewSubSystemType.tacticalIcon="hexagon"
 NewSubSystemType.tacticalIconMinSize=0.0035
 NewSubSystemType.tacticalIconMinFadeSize=0.0045
@@ -26,7 +26,7 @@ NewSubSystemType.selectionLimit=5000
 NewSubSystemType.preciseATILimit=5000
 NewSubSystemType.selectionPriority=37.5
 NewSubSystemType.type="System"
-NewSubSystemType.typeString="FighterProduction"
+NewSubSystemType.typeString="Repair"
 NewSubSystemType.collateralDamage=100
 NewSubSystemType.inactiveTimeAfterDamage=10
 NewSubSystemType.activateHealthPercentage=0.1
@@ -35,10 +35,16 @@ NewSubSystemType.timeToBuild=45
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=1
 LoadHODFile(NewSubSystemType,1);
-NewSubSystemType.BuildFamily="SubSystem_Hgn"
-NewSubSystemType.AttackFamily="Unattackable"
-NewSubSystemType.DockFamily="CantDock"
-NewSubSystemType.DisplayFamily="Fighter"
-NewSubSystemType.ArmourFamily="Unarmoured"
+NewSubSystemType.BuildFamily = "SubSystem_Hgn"
+NewSubSystemType.AttackFamily = "SubSystem"
+NewSubSystemType.DockFamily = "CantDock"
+NewSubSystemType.DisplayFamily = "SubSystemModule"
+NewSubSystemType.ArmourFamily = "SubSystemArmour"
+
+AddSubSystemMultiplier(NewSubSystemType, "ShipHoldRepairSpeed", "ThisShipOnly", "Linear", 1, 0.25, 0)
+AddSubSystemMultiplier(NewSubSystemType, "HealthRegenerationRate", "ThisShipOnly", "Linear", 1, 0.25, 0)
+AddSubSystemMultiplier(NewSubSystemType, "ShieldRegenerationRate", "ThisShipOnly", "Linear", 1, 0.25, 0)
+
+
 loadShipPatchList(NewSubSystemType,"data:sound/sfx/ship/Hiigaran/Subsystems/"
                              ,1,"HPSubsystemFighterAmb");

@@ -142,19 +142,17 @@ addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"CaptureCommand",1,-50);
 addAbility(NewShipType,"HyperSpaceCommand",0,0,250,250,0,3.141592653)
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"munition, Capturer, Corvette, Fighter, SmallCapitalShip, BigCapitalShip, Mothership", "Dogfight_capital")
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"munition, Capturer, Corvette, Fighter, SmallCapitalShip, BigCapitalShip, Mothership", "MoveToTargetAndShoot")
 addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeCaptured",45,0.5);
 addAbility(NewShipType,"CanBeRepaired");
 addAbility(NewShipType,"RetireAbility",1,1);
-AddShipMultiplier(NewShipType, "WeaponAccuracy", "OwnShipsWithinRadiusExcludingThisShip", "Linear", 1.15, 1.15, 1875)
-AddShipMultiplier(NewShipType, "WeaponDamage", "OwnShipsWithinRadiusExcludingThisShip", "Linear", 1.15, 1.15, 1875)
+
 LoadModel(NewShipType,1);
-StartShipHardPointConfig(NewShipType,"T","Weapon_TurretTop","Weapon","Innate","Indestructible","hgn_smallionturret","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"FT","Hardpoint_FLAK","Weapon","Innate","Indestructible","hgn_mountedflak","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"FT","Hardpoint_FLAK2","Weapon","Innate","Indestructible","hgn_mountedflak","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"FT","Hardpoint_FLAK3","Weapon","Innate","Indestructible","hgn_mountedflak","","","","","","","","");
+
+StartShipWeaponConfig(NewShipType, "Hgn_GatlingGunSmall", "Weapon_TurretTop", "Weapon_TurretTop")
+
 addShield(NewShipType,"EMP",220,20);
 NewShipType.battleScarMaxTriBase=75
 NewShipType.battleScarMaxTriInc=100

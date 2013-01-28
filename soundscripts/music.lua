@@ -52,7 +52,7 @@ function Play(Music)
 		ShuffleStaging()
 			
 	elseif Music == "mute" then
-		Sound_MusicPlay("data:sound\\music\\Mute" )
+		Sound_MusicPlay("data:sound\\Mute" )
 		
 	else
 		Sound_MusicPlay("data:sound\\music\\" .. Music)

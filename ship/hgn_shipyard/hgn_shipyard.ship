@@ -162,6 +162,7 @@ addAbility(NewShipType, "SensorPing", 0, 1, 10, 2.5)
 addAbility(NewShipType, "HyperspaceInhibitorAbility", 0, 12000)
 addAbility(NewShipType, "DefenseFieldAbility", 0, 0, 1500, 500, 500, 1, 0.6, 0, "defensefield_sphere_spray")
 addAbility(NewShipType, "DefenseFieldShieldAbility", 1, 1500, 0, 0)
+addAbility(NewShipType, "SensorPing", 0, 1, 10, 2.5)
 
 LoadModel(NewShipType, 1)
 
